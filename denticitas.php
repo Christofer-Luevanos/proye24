@@ -7,7 +7,7 @@
   $telefono = "3330238313";
   $edad = "18";
   $peso = "1kg";*/
-  $nombre_us=filter_input(INPUT_POST,"n_us")
+  $nombre_us="edwin";
   $name = filter_input(INPUT_POST, "nombre");
   $lastnameF = filter_input(INPUT_POST, "apellido_pat");
   $lastnameM = filter_input(INPUT_POST, "apellido_mat");
