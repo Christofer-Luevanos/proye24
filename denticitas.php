@@ -1,19 +1,19 @@
 <?php
   include 'denticonfig.php';
-  $nombre_us="Fernanda";
+  /*$nombre_us="Fernanda";
   $name = "Claudio";
   $lastnameF = "Hernandez";
   $lastnameM = "Ruiz";
   $telefono = "3330238313";
   $edad = "18";
-  $peso = "1kg";
-  //$nombre_us=filter_input(INPUT_POST,"n_us")
-  //$name = filter_input(INPUT_POST, "nombre");
-  //$lastnameF = filter_input(INPUT_POST, "apellido_pat");
-  //$lastnameM = filter_input(INPUT_POST, "apellido_mat");
-  //$telefono = filter_input(INPUT_POST, "telefono");
-  //$edad = filter_input(INPUT_POST, "edad");
-  //$peso = filter_input(INPUT_POST, "peso");
+  $peso = "1kg";*/
+  $nombre_us=filter_input(INPUT_POST,"n_us")
+  $name = filter_input(INPUT_POST, "nombre");
+  $lastnameF = filter_input(INPUT_POST, "apellido_pat");
+  $lastnameM = filter_input(INPUT_POST, "apellido_mat");
+  $telefono = filter_input(INPUT_POST, "telefono");
+  $edad = filter_input(INPUT_POST, "edad");
+  $peso = filter_input(INPUT_POST, "peso");
 
   $pacientQuery = "SELECT id_paciente FROM paciente WHERE nombre='".$name."' AND apellido_paterno='".$lastnameF."'";
   $pacientResult = mysqli_query($conn, $pacientQuery);
