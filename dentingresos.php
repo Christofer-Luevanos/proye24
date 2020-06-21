@@ -3,7 +3,7 @@
   /*$name = "Fernanda";
   $email = "12345@gmail.com";
   $contra = "12345";*/
-  $name = filter_input(INPUT_POST, "nombre");
+  $name = filter_input(INPUT_POST, "name");
   $email = filter_input(INPUT_POST, "email");
   $contra = filter_input(INPUT_POST, "contra");
 
