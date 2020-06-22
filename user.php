@@ -1,7 +1,6 @@
 <?php
 include 'denticonfig.php';
-$name = "Pepe";
-//$name = filter_input(INPUT_POST, "name");
+$name = filter_input(INPUT_POST, "name");
 $query = "DELETE FROM paciente WHERE nombre = '$name'";
 $Resultado = mysqli_query($conn, $query);
 $lastId = mysqli_insert_id($conn);
