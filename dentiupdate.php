@@ -1,6 +1,6 @@
 <?php
   include 'denticonfig.php';
-  /*$name = "claudio";
+  /*$name = "Claudio";
   $lastnameF = "Hernandez";
   $lastnameM = "Ruiz";
   $telefono = "3321647768";

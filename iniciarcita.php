@@ -1,14 +1,14 @@
 <?php
 header('Content-Type: application/json');
-include 'dbconfig.php';
+include 'denticonfig.php';
 
 $menu = 1;
 $resultadoArray = array();
-
+$aux=1;
 if($menu == 1){
-  $mascotaQuery = "SELECT nombre FROM paciente WHERE id_upaciente > '$aux'";
-  $mascotaResultado = mysqli_query($conn, $mascotaQuery);
-  foreach($mascotaResultado as $row){
+  $pacienteQuery = "SELECT * FROM paciente WHERE id_paciente > '$aux'";
+  $pacienteResultado = mysqli_query($conn, $pacienteQuery);
+  foreach($pacienteResultado as $row){
     $resultadoArray[] = $row;
   }
 }
